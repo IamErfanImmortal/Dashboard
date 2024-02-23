@@ -1,0 +1,24 @@
+body {
+    font-family: "Vazirmatn", sans-serif !important;
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+.sidebar .sidebarLogo img {
+    width: 70px;
+}
+.sidebar .sidebarLogo span {
+    font-weight: 900;
+    font-size: 1rem !important;
+    color: black;
+}
+.sidebar .userInfo img {
+    width: 32px;
+    height: 32px;
+}
