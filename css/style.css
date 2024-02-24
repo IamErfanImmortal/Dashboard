@@ -1,34 +1,43 @@
 body {
-    font-family: "Vazirmatn", sans-serif !important;
-    font-size: 16px;
+  font-family: "Vazirmatn", sans-serif !important;
+  font-size: 16px;
 }
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 a {
-    text-decoration: none;
-    font-size: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
 }
 .sidebarLogo img {
-    width: 60px;
+  width: 60px;
 }
 .sidebar .sidebarLogo span {
-    font-weight: 900;
-    font-size: 1rem !important;
-    color: black;
+  font-weight: 900;
+  font-size: 1rem !important;
+  color: black;
 }
 .sidebar .userInfo img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 .userInfo img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 .w_inherit {
-    width: inherit;
+  width: inherit;
 }
 .fourcards svg.chart {
-    font-size: 48px !important;
+  font-size: 48px !important;
+}
+.table img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
