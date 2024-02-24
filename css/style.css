@@ -29,3 +29,6 @@ a {
 .w_inherit {
     width: inherit;
 }
+.fourcards svg.chart {
+    font-size: 48px !important;
+}
