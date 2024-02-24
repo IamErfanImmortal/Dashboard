@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="rtl" data-bs-theme="">
 <head>
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
       <section class="sidebarLogo">
         <a href="#" class="d-flex gap-2 align-items-center">
           <img src="/images/logo.webp" alt="لوگو داشبورد" class="img-fluid">
-          <span>داشبورد من</span>
+          <span class="text-dark-emphasis">داشبورد من</span>
         </a>
         <hr>
       </section>
@@ -378,7 +378,19 @@
         </section>
       </div>
     </main>
+      <!-- Dark Mode button -->
+      <section class="modeDarkButton">
 
+        <div class="btn-group dropup position-fixed bottom-0 start-50">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            تغییر تم
+          </button> 
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="#" id="lightModeBtn">روشن</a></li>
+            <li><a class="dropdown-item" href="#" id="darkModeBtn">تاریک</a></li>
+          </ul>
+        </div>
+      </section>
   </div>
 
 
@@ -397,6 +409,40 @@
 		$('[data-toggle="tooltip"]').tooltip()
 		});
 	  </script>
+        <script>
+          let lightModeBtn = document.getElementById('lightModeBtn')
+          let darkModeBtn = document.getElementById('darkModeBtn')
+  
+  
+          darkModeBtn.addEventListener('click', function () {
+              console.log('click darkModeBtn')
+              document.documentElement.setAttribute('data-bs-theme', 'dark')
+              darkModeBtn.classList.add('active')
+              lightModeBtn.classList.remove('active')
+              localStorage.setItem('themeMode', 'dark')
+          })
+          lightModeBtn.addEventListener('click', function () {
+              console.log('click lightModeBtn')
+              document.documentElement.setAttribute('data-bs-theme', 'light')
+              lightModeBtn.classList.add('active')
+              darkModeBtn.classList.remove('active')
+              localStorage.setItem('themeMode', 'light')
+          })
+  
+          let saveThemMode = localStorage.getItem('themeMode')
+          if (saveThemMode == 'dark') {
+              document.documentElement.setAttribute('data-bs-theme', 'dark')
+              darkModeBtn.classList.add('active')
+              lightModeBtn.classList.remove('active')
+            
+          }
+          else{
+              document.documentElement.setAttribute('data-bs-theme', 'light')
+              lightModeBtn.classList.add('active')
+              darkModeBtn.classList.remove('active')
+            
+          }
+      </script>
       
 </body>
 </html>
