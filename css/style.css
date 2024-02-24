@@ -31,6 +31,8 @@ a {
 }
 .fourcards svg.chart {
   font-size: 48px !important;
+  color: red;
+  font-size: 50px;
 }
 .table img {
     width: 32px;
