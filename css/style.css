@@ -10,8 +10,8 @@ a {
     text-decoration: none;
     font-size: 1rem;
 }
-.sidebar .sidebarLogo img {
-    width: 70px;
+.sidebarLogo img {
+    width: 60px;
 }
 .sidebar .sidebarLogo span {
     font-weight: 900;
@@ -21,4 +21,11 @@ a {
 .sidebar .userInfo img {
     width: 32px;
     height: 32px;
+}
+.userInfo img {
+    width: 32px;
+    height: 32px;
+}
+.w_inherit {
+    width: inherit;
 }
